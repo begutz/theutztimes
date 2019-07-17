@@ -1,3 +1,5 @@
+/* Applies to both mobile and desktop */
+
 * {
   box-sizing: border-box;
 }
@@ -22,77 +24,6 @@ a {
   text-decoration: none;
 }
 
-.footer {
-  display: flex;
-  justify-content: center;
-}
-
-.title {
-  font-family: "Niconne", cursive;
-  font-size: 2.5rem;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.amy-image {
-  width: 100%;
-}
-
-.container-1 {
-  margin: 0 25px;
-  border: 5px solid black;
-  display: flex;
-  justify-content: space-around;
-}
-
-.side-box {
-  width: 30%;
-  padding: 10px;
-  border: 2px solid black;
-  margin: 10px;
-}
-
-.middle-box {
-  width: 40%;
-  padding: 10px;
-  border: 2px solid black;
-  display: flex;
-  flex-direction: column;
-  margin: 10px 0px;
-}
-
-.container-2 {
-  margin: 25px;
-  border: 5px solid black;
-  display: flex;
-}
-
-.bottom-left {
-  padding: 10px;
-  border: 2px solid black;
-  margin: 10px;
-}
-
-.navigation {
-  padding: 10px;
-  border: 2px solid black;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 100%;
-}
-
-.sections {
-  padding: 30px;
-}
-
-.navigation a {
-  font-weight: 800;
-  color: cornsilk;
-}
-
 .local {
   background-color: #9ea93f;
 }
@@ -113,7 +44,128 @@ a {
   background-color: #6b6054;
 }
 
+.amy-image {
+  width: 100%;
+}
+
+.footer {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-family: "Niconne", cursive;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.navigation a {
+  font-weight: 800;
+  color: cornsilk;
+}
+
 .twitter-logo {
   color: black;
   padding-left: 10px;
+}
+
+/* Applies to desktop computers */
+
+@media only screen and (min-width: 1025px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .container-1 {
+    margin: 0 25px;
+    border: 5px solid black;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .side-box {
+    width: 30%;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 10px;
+  }
+
+  .middle-box {
+    width: 40%;
+    padding: 10px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+  }
+
+  .container-2 {
+    margin: 25px;
+    border: 5px solid black;
+    display: flex;
+  }
+
+  .bottom-left {
+    padding: 10px;
+    border: 2px solid black;
+    margin: 10px;
+  }
+
+  .navigation {
+    padding: 10px;
+    border: 2px solid black;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .sections {
+    padding: 30px;
+  }
+}
+
+/* Applies to tablet and phones */
+
+@media only screen and (max-width: 1024px) {
+  .title {
+    font-family: "Niconne", cursive;
+    font-size: 2.5rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .container-1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .side-box {
+    padding: 10px;
+    border: 2px solid black;
+  }
+
+  .middle-box {
+    padding: 10px;
+    border: 2px solid black;
+    margin: 10px 0;
+  }
+
+  .bottom-left {
+    padding: 10px;
+    border: 2px solid black;
+    margin: 10px 0;
+  }
+
+  .sections {
+    padding: 20px;
+  }
 }
