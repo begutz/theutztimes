@@ -1,2 +1,3 @@
 # theutztimes
-Frontend Master HTML and CSS project
+Frontend Masters HTML and CSS project
+https://begutz.github.io/theutztimes/
